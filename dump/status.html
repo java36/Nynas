@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta name="author" content="Sina Samarbafzadeh">
+    <meta name="description" content="Nickstabadets status">
+    <meta name="keywords" content="Nickstabadet, status, vädret, tåg, tidtabell, prognos">
+    <link href="assets/styles/general.css" rel="stylesheet">
+    <title>Status</title>
+  </head>
+  
+  <body>
+    <header>
+  
+  <h1>Nickstabadet</h1>
+   
+  <p>Ett roligt sommarbad</p>    
+  </header>
+    <div id="navigation">
+    <nav>
+      <ul class="nav">
+        <li> <a  href="index.html">Hem</a></li>
+        <li> <a  href="contact.html">Kontakt</a></li>
+        <li> <a  href="status.html">Väder</a></li>
+        <li class="back"> <a  href="javascript:history.go(-1)" onMouseOver="self.status.referer;return true">Tillbaka</a></li>
+      </ul>  
+    </nav>  
+    </div>
+    <section>
+    <div>
+      <h2>Vädret på Nicksta</h2>
+    </div>
+    
+    <div>
+      <table class="table">
+        <thead class="table-head">
+          <tr class="table-row">
+            <th class="th-item">Klocka</th>
+            <th class="th-item">Vädret</th>
+            <th class="th-item">Värme</th>
+            <th class="th-item">Vind</th>
+          </tr>
+        </thead>
+        <tbody class="table-body">
+          <tr class="table-row">
+            <td class="td-item">09.00</td>
+            <td class="td-item">Moln</td>
+            <td class="td-item">16 C</td>
+            <td class="td-item">3 m/s</td>
+          </tr>
+          <tr class="table-row">
+            <td class="td-item">12.00</td>
+            <td class="td-item">Sol</td>
+            <td class="td-item">18 C</td>
+            <td class="td-item">4 m/s</td>
+          </tr>
+          <tr class="table-row">
+            <td class="td-item">15.00</td>
+            <td class="td-item">Sol</td>
+            <td class="td-item">20 C</td>
+            <td class="td-item">2m/s</td>
+          </tr>
+          <tr class="table-row">
+            <td class="td-item">18.00</td>
+            <td class="td-item">Regn</td>
+            <td class="td-item">19 C</td>
+            <td class="td-item">3 m/s</td>
+          </tr>
+          <tr class="table-row">
+            <td class="td-item">21.00</td>
+            <td class="td-item">Moln</td>
+            <td class="td-item">17 C</td>
+            <td class="td-item">1 m/s</td>
+          </tr>
+        </tbody>        
+      </table>
+    </div>
+    <div>
+      <h2>Åker tågen?</h2>
+      <div>
+        <form>
+          <label>Jag åker ifrån </label>
+          <input type="text" maxlength="20" required>
+          <button type="submit">Skicka</button>
+        </form>
+      </div>
+      <div>
+        <h2>Åker från:</h2>
+        <table class="table">
+          <thead class="table-head">
+            <tr class="table-row">
+              <th class="th-item">Nr</th>
+              <th class="th-item">Avgår</th>
+              <th class="th-item">Ankommer</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr class="table-row">
+              <td class="td-item">42</td>
+              <td class="td-item">10:25</td>
+              <td class="td-item">11:23</td>
+            </tr>
+            <tr class="table-row">
+              <td class="td-item">42</td>
+              <td class="td-item">12:25</td>
+              <td class="td-item">13:23</td>
+            </tr>
+            <tr class="table-row">
+              <td class="td-item">42</td>
+              <td class="td-item">14:25</td>
+              <td class="td-item">15:23</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <p>Inga problem i trafiken</p>
+      </div>      
+    </div>
+      </section>
+ 
+  <footer>Vill du veta mer? Skicka e-post till <a href="mailto:sinasa2@gmail.com">sinasa2@gmail.com</a></footer>
+</body>

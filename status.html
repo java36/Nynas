@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta name="author" content="Sina Samarbafzadeh">
+    <meta name="description" content="Nickstabadets status">
+    <meta name="keywords" content="Nickstabadet, status, vädret, tåg, tidtabell, prognos">
+    <link href="assets/styles/general.css" rel="stylesheet">
+    <title>Status</title>
+  </head>
+  
+  <body>
+    <header class="pt-2 pb-2 pl-5">
+      <h1>Nickstabadet</h1>
+      <p>Ett roligt sommarbad</p>    
+    </header>
+       <div id="navigation" class="bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"> 
+                    <a class="nav-link" href="index.html">
+                        Hem
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Kontakt
+                    </a>
+                </li>
+                <li class="nav-item active"> 
+                    <a class="nav-link" href="status.html">
+                        Väder
+                    </a>
+                </li>
+                <li class="nav-item back"> <a class="nav-link" href="javascript:history.go(-1)" onMouseOver="self.status.referer;return true">Tillbaka</a></li>
+            </ul>
+            </div>
+        </nav>  
+    </div>
+      
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row py-5">
+                <div class="box col-md-4 col-sm-12 my-sm-5 ml-auto py-2 order-12">        
+    <div>
+      <h2>Vädret på Nicksta</h2>
+    </div>
+    
+    <div>
+      <table id="weather-table" class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>Klocka</th>
+            <th>Vädret</th>
+            <th>Värme</th>
+            <th>Vind</th>
+          </tr>
+        </thead>     
+      </table>
+    </div>
+     </div>
+                
+    <div class="box col-md-7 col-sm-12 py-2 order-1">
+      <h2>Åker tågen?</h2>
+      <div>
+        <form>
+            <div class="form-group">
+          <label for="cityInput">Jag åker ifrån </label>
+          <input id="cityInput" class="form-control" type="text" value="" maxlength="20" placeholder="City..." required>
+            </div>
+          <button id="button" class="btn btn-danger" type="submit">Skicka</button>
+        </form>
+      </div>
+      <div id="table-div" class="my-3">
+        <table class="table table-striped time-table">
+        </table>
+      </div>      
+    </div>
+   </div>
+    </div>
+        <div  id="footer" class="row justify-content-center">
+            <footer class="my-2">
+                Vill du veta mer? Skicka e-post till <a href="mailto:sinasa2@gmail.com">sinasa2@gmail.com</a>
+            </footer>
+        </div>
+    </div>
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-lfkmjryuKFZiqPoxpw0G64ZdTfxBWiUH3EkxBon+DLWzdWETwlbweD16FjRRucOD" crossorigin="anonymous">
+      <script src="app.js"></script>
+</body>
